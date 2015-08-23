@@ -1,0 +1,14 @@
+{
+  "name": "uoacalendar-examples",
+  "description": "A starter project uoacalendar-js",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "fullcalendar": "~2.2.5",
+    "datetimepicker": "~2.4.1",
+    "jquery-ui": "~1.11.2",
+    "uoacalendar-js": null,
+    "fullcalendar-uoa": null,
+	"fullcalendar-uoa-ui": null
+  }
+}
