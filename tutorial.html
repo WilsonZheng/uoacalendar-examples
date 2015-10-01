@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 	<head>
 		<script src="bower_components/uoacalendar-js/dist/uoacalendar.js"></script>
 		<script src="js/tutorial.js"></script>
@@ -8,4 +8,81 @@
 		<button type="button" onclick="addEventClick();">Add event</button>
 		<button type="button" onclick="findEventClick();">Find event</button>
 	</body>
+</html> -->
+
+<html>
+<head>
+    <link href="bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+    <link href="bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="bower_components/datetimepicker/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.css" rel="stylesheet">
+
+    <script src="bower_components/uoacalendar-js/dist/uoacalendar.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="bower_components/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="bower_components/fullcalendar-uoa/uoacal.js"></script>
+    <script src="bower_components/fullcalendar-uoa-ui/uoacal-ui.js"></script>
+	
+	<script src="js/tutorial.js"></script>
+
+    <script lang="javascript">
+        $(document).ready(function() {
+            console.log("user ready() called");
+            eventType = {
+		    	show: ['title', 'start', 'end', 'reminder', 'url'],
+			    custom: []
+		    };
+            uoaCalendar('#calendar', {
+                events: {
+                    uoaCalendarId: '1',
+                    uoaCalendarApiToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnX2lhdCI6MTQyMjQ5ODk0OSwiZXhwIjoxNDIyNDk5MjQ5LCJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRldmVsb3BlciIsImVtYWlsIjoidGVzdEBhdWNrbGFuZC5hYy5ueiJ9.7jLkEBovT2HvT2noL4xdIhddaY8wpZpEVYEDHnnNm1Y',
+                    uoaCalendarHost: 'sitcalprd01.its.auckland.ac.nz',
+                    uoaCalendarPort: '345'
+                },
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- <div id="dialog-form" title="Create new event">
+  <p class="validateTips">All form fields are required.</p>
+  <form>
+    <fieldset>
+      <label for="name">Title</label>
+      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+      <label for="email">Start Date</label>
+      <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+      <label for="password">End Date</label>
+      <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+ 
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div> -->
+
+<button type="button" onclick="createCalendarClick();">Create calendar</button>
+
+<input type="text" name="title" id="title"/>
+<button type="button" onclick="addEventClick();">Add event</button>
+
+<button type="button" onclick="findEventClick();">Find event</button>
+		
+<div id="loading">loading...</div>
+<div id="calendar"></div>
+
+
+
+</body>
+
 </html>
