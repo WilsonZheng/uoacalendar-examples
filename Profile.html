@@ -3,8 +3,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>CSS Registration Form</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+    <script type = "text/javascript" language="javascript">
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        function calculate()
+        {
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+            var heightInMetre = (height/ 100);
+            var square = heightInMetre * heightInMetre;
+            var bmi= weight / square ;
+            document.getElementById("bmi").value= bmi.toFixed(2);
+        }
+    </script>
 </head>
 <body>
 <form action="index.html" class="register">
@@ -16,11 +38,11 @@
         <p>
             <label>Name *
             </label>
-            <input type="text" class="long"/>
+            <input type="text" class="long" required/>
         </p>
         <p>
             <label>Gender *</label>
-            <input type="radio" value="radio" name="radio"/>
+            <input type="radio" value="radio" name="radio" required/>
             <label class="gender">Male</label>
             <input type="radio" value="radio" name="radio"/>
             <label class="gender">Female</label>
@@ -28,7 +50,7 @@
         <p>
             <label>Birthdate *
             </label>
-            <select class="date">
+            <select class="date" required>
                 <option value="1">01
                 </option>
                 <option value="2">02
@@ -92,7 +114,7 @@
                 <option value="31">31
                 </option>
             </select>
-            <select>
+            <select required>
                 <option value="1">January
                 </option>
                 <option value="2">February
@@ -118,21 +140,26 @@
                 <option value="12">December
                 </option>
             </select>
-            <input class="year" type="text" size="4" maxlength="4"/>e.g 1976
+            <input class="year" type="text" size="4" maxlength="4" onkeypress="return isNumber(event)" required/>e.g 1976
         </p>
         <p>
             <label>Height (cm)*
             </label>
-            <input class="long" type="text"/>
+            <input class="long" type="text" id="height" onkeypress="return isNumber(event)" required/>
 
         </p>
         <p>
             <label>Weight (kg)*
             </label>
-            <input class="long" type="text"/>
+            <input class="long" type="text" id ="weight"  onkeypress="return isNumber(event);" onkeyup="calculate()" required/>
+        </p>
+        <p>
+            <label>BMI
+            </label>
+            <input class="long" type="text" id="bmi" readonly="readonly" value="0"  />
         </p>
     </fieldset>
-    <div><button class="button">Proceed &raquo;</button></div>
+    <div><button class="button">PROCEED &raquo;</button></div>
 </form>
 </body>
 </html>
