@@ -10,16 +10,14 @@
 	
 	<script type = "text/javascript">
 
-	var unArray = ["admin", "b", "c@aa", "d"];  
-	var pwArray = ["admin", "2", "3", "4"]; 
+	var unArray = ["admin", "b", "c@aa", "d","janani"];
+	var pwArray = ["admin", "2", "3", "4","janani"];
 	var length = 4;
 	var count =10;
 	function validate() {
 		var un = document.myform.username.value;
 		var pw = document.myform.pword.value;
 		var valid = false;
-
-		
 
 		for (var i=0; i <unArray.length; i++) {
 		if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -30,7 +28,7 @@
 
 		if (valid) {
 		alert ("Login was successful");
-		window.location.href = "index.html";
+		window.location.href = "Profile.html";
 		return false;
 		}
 
@@ -82,11 +80,7 @@
 
 	</script>
 </head>
-
-
 <body>
-
-		
 				
 				<div class="login-box">
 				<div class="lb-header">
@@ -111,7 +105,7 @@
 					<input type="password" placeholder="Password" name="pword"/>
 				  </div>
 				  <div class="u-form-group">
-					<button name="Submit" onclick= "validate()">Log in</button>
+					<button name="Submit" onclick= "validate()" >Log in</button>
 				  </div>
 				  
 				  <div class="u-form-group">
