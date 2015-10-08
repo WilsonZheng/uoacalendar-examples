@@ -19,52 +19,10 @@
             <input type="text" class="long"/>
         </p>
         <p>
-            <label>Phone *
-            </label>
-            <input type="text" maxlength="10"/>
-        </p>
-        <p>
-            <label class="optional">Street
-            </label>
-            <input type="text" class="long"/>
-        </p>
-        <p>
-            <label>City *
-            </label>
-            <input type="text" class="long"/>
-        </p>
-        <p>
-            <label>Country *
-            </label>
-            <select>
-                <option>
-                </option>
-                <option value="1">New Zealand
-                </option>
-                <option value="2">United States
-                </option>
-            </select>
-        </p>
-        <p>
-            <label>Height *
-            </label>
-            <input class="long" type="text"/>
-
-        </p>
-        <p>
-            <label>Weight *
-            </label>
-            <input class="long" type="text"/>
-        </p>
-    </fieldset>
-    <fieldset class="row3">
-        <legend>Further Information
-        </legend>
-        <p>
             <label>Gender *</label>
-            <input type="radio" value="radio"/>
+            <input type="radio" value="radio" name="radio"/>
             <label class="gender">Male</label>
-            <input type="radio" value="radio"/>
+            <input type="radio" value="radio" name="radio"/>
             <label class="gender">Female</label>
         </p>
         <p>
@@ -163,23 +121,16 @@
             <input class="year" type="text" size="4" maxlength="4"/>e.g 1976
         </p>
         <p>
-            <label>Nationality *
+            <label>Height (cm)*
             </label>
-            <select>
-                <option value="0">
-                </option>
-                <option value="1">United States
-                </option>
-            </select>
+            <input class="long" type="text"/>
+
         </p>
         <p>
-            <label>Children *
+            <label>Weight (kg)*
             </label>
-            <input type="checkbox" value="" />
+            <input class="long" type="text"/>
         </p>
-        <div class="infobox"><h4>Helpful Information</h4>
-            <p>Please enter your details correctly as these details might be used for the evaluation of the workout needed for your body.</p>
-        </div>
     </fieldset>
     <div><button class="button">Proceed &raquo;</button></div>
 </form>
