@@ -39,7 +39,7 @@ $userRow=mysql_fetch_array($res);
 					<li><a href="logout.php?logout">Sign Out</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="Profile.php">My Profile</a></li>
-					<li><a href="calendar-ui-example.html">Manage your calendar</a></li>
+					<li><a href="uoa.php">Manage your calendar</a></li>
 					<li><a href="home.php">Check Workout Summary</a></li>
 					
 				</ul>
@@ -69,7 +69,7 @@ $userRow=mysql_fetch_array($res);
 							If you do not know how to start working out yourself, check out our beginner's guide.</p>
 							<ul class="actions">
 								<li>
-									<a href="#" class="button special">More</a>
+									<a href="fitness101.php" class="button special">More</a>
 								</li>
 							</ul>
 						</div>	
@@ -83,7 +83,7 @@ $userRow=mysql_fetch_array($res);
 							<p>Don't know what workout suit you? Check out the samples workout provided for you.</p>
 							<ul class="actions">
 								<li>
-									<a href="#" class="button special">More</a>
+									<a href="sampleworkout.php" class="button special">More</a>
 								</li>
 							</ul>
 						</div>
@@ -98,7 +98,7 @@ $userRow=mysql_fetch_array($res);
 							disease and keep your exercise outcome. Check out what to eat to be healthy!</p>
 							<ul class="actions">
 								<li>
-									<a href="#" class="button special">More</a>
+									<a href="healthyplan.php" class="button special">More</a>
 								</li>
 							</ul>
 						</div>
