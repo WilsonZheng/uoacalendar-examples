@@ -29,7 +29,7 @@
     </script>
 </head>
 <body>
-<form action="home.html" class="register">
+<form action="home.php" class="register">
     <h1>Profile</h1>
 
     <fieldset class="row2">

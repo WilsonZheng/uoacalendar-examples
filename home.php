@@ -32,6 +32,7 @@ $userRow=mysql_fetch_array($res);
 	
     <p>You are login now!</p>
 	<a href="index.html">Back to Home Page</a>
+	<a href="Profile.php">Profile</a>
 </div>
 
 </body>
