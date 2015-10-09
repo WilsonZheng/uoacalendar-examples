@@ -1,3 +1,40 @@
+<?php
+session_start();
+
+include_once 'dbconnect.php';
+
+mysql_connect("localhost", "root", "") or die(mysql_error()); 
+mysql_select_db("dbtest") or die(mysql_error());
+
+if(isset($_POST['proceed']))
+{
+	$name = mysql_real_escape_string($_POST['name']);
+	$gender = mysql_real_escape_string($_POST['gender']);
+	$height = mysql_real_escape_string($_POST['height']);
+	$weight = mysql_real_escape_string($_POST['weight']);
+	$bmi = mysql_real_escape_string($_POST['bmi']);
+	$uname = mysql_real_escape_string($_POST['uname']);
+	$user_Id = $_SESSION['user'];
+	
+	?>
+	<script>alert(user_Id.value);</script>
+	<?php
+	$sql = "UPDATE users SET Name = '$name', Gender = '$gender', Height = '$height',
+	Weight = '$weight', BMI = '$bmi' where user_id = ".$_SESSION['user'];
+	
+	if (mysql_query($sql)) {
+		?>
+			<script>alert('Record updated successfully');</script>
+		<?php
+		echo "Record updated successfully";
+	} else {
+		?>
+			<script>alert('Record updated unsuccessfully');</script>
+		<?php
+		echo "Error updating record ";
+	}
+}
+?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -38,7 +75,7 @@
         <p>
             <label>Name *
             </label>
-            <input type="text" class="long" required/>
+            <input type="text" class="long" name="name" required/>
         </p>
         <p>
             <label>Gender *</label>
@@ -50,7 +87,7 @@
         <p>
             <label>Birthdate *
             </label>
-            <select class="date" required>
+            <select class="date" name = "dob" required>
                 <option value="1">01
                 </option>
                 <option value="2">02
@@ -145,21 +182,21 @@
         <p>
             <label>Height (cm)*
             </label>
-            <input class="long" type="text" id="height" onkeypress="return isNumber(event)" required/>
+            <input class="long" type="text" id="height" onkeypress="return isNumber(event)" name="height" required/>
 
         </p>
         <p>
             <label>Weight (kg)*
             </label>
-            <input class="long" type="text" id ="weight"  onkeypress="return isNumber(event);" onkeyup="calculate()" required/>
+            <input class="long" type="text" id ="weight"  onkeypress="return isNumber(event);" onkeyup="calculate()" name ="weight" required/>
         </p>
         <p>
             <label>BMI
             </label>
-            <input class="long" type="text" id="bmi" readonly="readonly" value="0"  />
+            <input class="long" type="text" id="bmi" readonly="readonly" value="0" name="bmi" />
         </p>
     </fieldset>
-    <div><button class="button">PROCEED &raquo;</button></div>
+    <div><button class="button" name = "proceed">PROCEED &raquo;</button></div>
 </form>
 </body>
 </html>

@@ -34,6 +34,10 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
+ALTER TABLE `users`  ADD `Name` VARCHAR(30) NOT NULL  AFTER `password`, 
+ ADD `Gender` VARCHAR(6) NOT NULL  AFTER `Name`,  ADD `Height` INT(3) NOT NULL  AFTER `Gender`,  
+ ADD `Weight` INT(3) NOT NULL  AFTER `Height`,  ADD `BMI` FLOAT(5) NOT NULL  AFTER `Weight`;
+
 --
 -- Dumping data for table `users`
 --
