@@ -17,7 +17,16 @@ if(isset($_POST['btn-login']))
 	if($row['password']==md5($upass))
 	{
 		$_SESSION['user'] = $row['user_id'];
+		header("Location: home.php");$_SESSION['user'] = $row['user_id'];
+		$count = mysql_query("SELECT count(*) FROM users WHERE email='$email' AND Height IS NOT NULL");
+		if($count==0)
+		{
+		header("Location: Profile.php");
+		}
+		else
+		{
 		header("Location: home.php");
+		}
 	}
 	else
 	{

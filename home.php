@@ -38,7 +38,7 @@ $userRow=mysql_fetch_array($res);
 				<ul class="links">
 					<li><a href="logout.php?logout">Sign Out</a></li>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="Profile.php">My Profile</a></li>
+					<li><a href="viewProfile.php">My Profile</a></li>
 					<li><a href="uoa.php">Manage your calendar</a></li>
 					<li><a href="home.php">Check Workout Summary</a></li>
 					
@@ -49,7 +49,7 @@ $userRow=mysql_fetch_array($res);
 			<center>
 				<ul class="actions" >
 					<li><a href="#" class="button">Add Workouts</a></li>
-					<li><a href="#" class="button alt">My Profile</a></li>
+					<li><a href="viewProfile.php" class="button alt">My Profile</a></li>
 					<li><a href="#" class="button alt">My Calendar</a></li>
 					<li><a href="#" class="button alt">My Summary</a></li>
 					
