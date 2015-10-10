@@ -54,7 +54,7 @@ $userRow=mysql_fetch_array($res);
 
 <body>
 <form action="editProfile.php" class = "register">
-   <h1>Profile</h1>
+   <h1 align = 'center'><b>Profile</b></h1>
 	<fieldset class="row1">
         <legend>Personal Details
         </legend>

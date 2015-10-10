@@ -2,11 +2,6 @@
 session_start();
 include_once 'dbconnect.php';
 
-if(isset($_SESSION['user'])!="")
-{
-	header("Location: home.php");
-}
-
 if(isset($_POST['btn-login']))
 {
 	$email = mysql_real_escape_string($_POST['email']);
@@ -14,22 +9,37 @@ if(isset($_POST['btn-login']))
 	$res=mysql_query("SELECT * FROM users WHERE email='$email'");
 	$row=mysql_fetch_array($res);
 	
+	
+		?>
+        <script>alert('Inside this loop');</script>
+        <?php
 	if($row['password']==md5($upass))
-	{
+	{	
 		$_SESSION['user'] = $row['user_id'];
-		header("Location: home.php");$_SESSION['user'] = $row['user_id'];
-		$count = mysql_query("SELECT count(*) FROM users WHERE email='$email' AND Height IS NOT NULL");
-		if($count==0)
-		{
+		?>
+        <script>alert('Inside this loop');</script>
+        <?php
+		$count = mysql_query("SELECT count(*) 'count' FROM users WHERE email='$email' AND Height IS NOT NULL");
+		$result = mysql_fetch_array($count);
+		$countvalue = $result['count'];
+		if($countvalue==0) 
+		{	
 		header("Location: Profile.php");
 		}
 		else
 		{
+		?>
+        <script>alert('Inside this loop');</script>
+        <?php
 		header("Location: home.php");
 		}
+		
 	}
 	else
 	{
+		?>
+        <script>alert('Inside this loop');</script>
+        <?php
 		?>
         <script>alert('Email or password not correct! Please try again.');</script>
         <?php
@@ -37,6 +47,7 @@ if(isset($_POST['btn-login']))
 	
 }
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -67,7 +78,6 @@ if(isset($_POST['btn-login']))
 </tr>
 <tr>
 <td><a href="register.php">Sign Up Here</a></td>
-
 </tr>
 <tr>
 <td><a href="index.html">Back to Home Page</a></td>

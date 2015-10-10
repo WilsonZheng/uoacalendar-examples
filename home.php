@@ -26,7 +26,6 @@ $userRow=mysql_fetch_array($res);
 					
 						Hello, <?php echo $userRow['username']; ?>&nbsp;
 						
-					
 				
 				<a href="#nav">Menu</a>
 				

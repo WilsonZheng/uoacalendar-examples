@@ -89,7 +89,7 @@ if(isset($_POST['done']))
 
 <body>
 <form method="post" class="register">
-    <h1>Profile</h1>
+    <h1 align = 'center'><b>Profile</b></h1>
 
     <fieldset class="row2">
         <legend>Personal Details

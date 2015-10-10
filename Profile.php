@@ -1,10 +1,12 @@
 <?php
 session_start();
 
-include_once 'dbconnect.php';
 
 mysql_connect("localhost", "root", "") or die(mysql_error()); 
 mysql_select_db("dbtest") or die(mysql_error());
+
+$res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
+$userRow=mysql_fetch_array($res);
 
 if(isset($_POST['proceed']))
 {
@@ -13,7 +15,6 @@ if(isset($_POST['proceed']))
 	$height = mysql_real_escape_string($_POST['height']);
 	$weight = mysql_real_escape_string($_POST['weight']);
 	$bmi = mysql_real_escape_string($_POST['bmi']);
-	$uname = mysql_real_escape_string($_POST['uname']);
 	$user_Id = $_SESSION['user'];
 	
 	?>
@@ -23,10 +24,7 @@ if(isset($_POST['proceed']))
 	Weight = '$weight', BMI = '$bmi' where user_id = ".$_SESSION['user'];
 	
 	if (mysql_query($sql)) {
-		?>
-			<script>alert('Record updated successfully');</script>
-		<?php
-		echo "Record updated successfully";
+		header("Location: home.php");
 	} else {
 		?>
 			<script>alert('Record updated unsuccessfully');</script>
@@ -43,6 +41,7 @@ if(isset($_POST['proceed']))
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/navheader.css"/>
     <script type = "text/javascript" language="javascript">
 
         function isNumber(evt) {
@@ -65,9 +64,30 @@ if(isset($_POST['proceed']))
         }
     </script>
 </head>
+<header id="header">
+				<h1><a href="index.html">Fantastic Training</a></h1>
+					
+				Hello, <?php echo $userRow['username']; ?>&nbsp;
+				
+				<a href="#nav">Menu</a>
+				
+				
+</header>
+
+<nav id="nav">
+				<ul class="links">
+					<li><a href="logout.php?logout">Sign Out</a></li>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="viewProfile.php">My Profile</a></li>
+					<li><a href="uoa.php">Manage your calendar</a></li>
+					<li><a href="home.php">Check Workout Summary</a></li>
+					
+				</ul>
+</nav>
+
 <body>
-<form action="home.php" class="register">
-    <h1>Profile</h1>
+<form method="post" class="register">
+    <h1 align = 'center'><b>Profile</b></h1>
 
     <fieldset class="row2">
         <legend>Personal Details
@@ -79,9 +99,9 @@ if(isset($_POST['proceed']))
         </p>
         <p>
             <label>Gender *</label>
-            <input type="radio" value="radio" name="radio" required/>
+            <input type="radio" value="male" name="gender" required/>
             <label class="gender">Male</label>
-            <input type="radio" value="radio" name="radio"/>
+            <input type="radio" value="female" name="gender"/>
             <label class="gender">Female</label>
         </p>
         <p>
@@ -199,6 +219,11 @@ if(isset($_POST['proceed']))
     <div><button class="button" name = "proceed">PROCEED &raquo;</button></div>
 </form>
 </body>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			
+			<script src="assets/js/main.js"></script>
 </html>
 
 
