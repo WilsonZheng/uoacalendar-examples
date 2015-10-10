@@ -37,6 +37,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 ALTER TABLE `users`  ADD `Name` VARCHAR(30) NOT NULL  AFTER `password`, 
  ADD `Gender` VARCHAR(6) NOT NULL  AFTER `Name`,  ADD `Height` INT(3) NOT NULL  AFTER `Gender`,  
  ADD `Weight` INT(3) NOT NULL  AFTER `Height`,  ADD `BMI` FLOAT(5) NOT NULL  AFTER `Weight`;
+ 
+ 
+ ALTER TABLE `users` CHANGE `BMI` `BMI` VARCHAR(6) NOT NULL;
+ ALTER TABLE `users` CHANGE `Height` `Height` VARCHAR(3) NOT NULL;
+ ALTER TABLE `users` CHANGE `Weight` `Weight` VARCHAR(3) NOT NULL;
+ 
+ ALTER TABLE `users` CHANGE `Height` `Height` VARCHAR(3) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
+ 
 
 --
 -- Dumping data for table `users`
