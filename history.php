@@ -41,16 +41,84 @@ $userRow=mysql_fetch_array($res);
 <form action="home.php" class = "register">
    <h1 align = 'center'><b>Workout Summary</b></h1>
 		
-
 		<br>
 		
-		<div><label><input type="radio" name="summaryPage" value="summary"/>Summary</label>
+		<div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="window.open(this.value)"/>Summary</label>
 		<br>
-		<label><input type="radio" name="summaryPage" value="history" checked/>History</label>
+		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="window.open(this.value)" checked/>History</label>
 		</div>
 		<br>
+		<br>
 		
+		<!-- CSS goes in the document HEAD or added to your external stylesheet -->
 		
+		<style type="text/css">
+		table.gridtable {
+			font-family: verdana,arial,sans-serif;
+			font-size:11px;
+			color:#333333;
+			border-width: 1px;
+			border-color: #666666;
+			border-collapse: collapse;
+		}
+		table.gridtable th {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #dedede;
+		}
+		table.gridtable td {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #ffffff;
+		}
+	</style>
+	
+	<!-- Table goes in the document BODY -->
+	<table class="gridtable"">
+		<tr>
+			<th>Date</th>
+			<th>Workout Type</th>
+			<th>Duration</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>01/10/2015</td>
+			<td>Cycling</td>
+			<td>1 hour</td>
+			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
+		</tr>
+		<tr>
+			<td>03/10/2015</td>
+			<td>Running</td>
+			<td>0.5 hour</td>
+			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
+		</tr>
+		<tr>
+			<td>05/10/2015</td>
+			<td>Climbing</td>
+			<td>1.5 hour</td>
+			<td><img src="Loser.jpg" alt="Loser face" height="25" width="30"></td>
+		</tr>
+		<tr>
+			<td>07/10/2015</td>
+			<td>Walking</td>
+			<td>0.5 hour</td>
+			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
+		</tr>
+		<tr>
+			<td>09/10/2015</td>
+			<td>Swimming</td>
+			<td>1 hour</td>
+			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
+		</tr>
+	</table>
+
+		
+</table>
 	
     <div><button class="button" name = "proceed">OK &raquo;</button></div>
 	</body>
