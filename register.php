@@ -14,6 +14,10 @@ if(isset($_POST['btn-signup']))
 	
 	if(mysql_query("INSERT INTO users(username,email,password) VALUES('$uname','$email','$upass')"))
 	{
+			$res=mysql_query("SELECT user_id FROM users WHERE email='$email'");
+			$row=mysql_fetch_array($res);
+			$id = $row['user_id'];
+			mysql_query("INSERT INTO userCalendarMappling(user_id,calendar_id) VALUES('$id','$id')");
 		?>
         <script>alert('successfully registered ');</script>
         <?php
