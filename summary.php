@@ -2,31 +2,8 @@
 <?php
 session_start();
 include_once 'dbconnect.php';
-include 'phpgraphlib.php';
-
-
 $res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
 $userRow=mysql_fetch_array($res);
-
-$graph = new PHPGraphLib(350,280);
-$data = array("Day1"=>4, "Day2"=>2, "Day3"=>5, "Day4"=>7,
-"Day5"=>1, "Day6"=>5, "Day7"=>2);
-//$graph->setBackgroundColor("black");
-$graph->addData($data);
-$graph->setBarColor('255,255,204');
-$graph->setTitle('Workout Summary');
-$graph->setTitleColor('black');
-$graph->setupYAxis(15, 'black');
-$graph->setupXAxis(20, 'black');
-$graph->setGrid(false);
-$graph->setGradient('purple', 'white');
-$graph->setBarOutlineColor('white');
-$graph->setTextColor('black');
-$graph->setDataPoints(true);
-$graph->setDataPointColor('red');
-$graph->setLine(true);
-$graph->setLineColor('red');
-$graph->createGraph();
 
 ?>
 
@@ -58,6 +35,20 @@ $graph->createGraph();
 					
 				</ul>
 </nav>
+			
+			
+<body>
+<form action="home.php" class = "register">
+   <h1 align = 'center'><b>Workout Summary</b></h1>
+
+		<img src = "graph.php"/>
+	
+		
+        
+   
+    <div><button class="button" name = "proceed">OK &raquo;</button></div>
+	</body>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
