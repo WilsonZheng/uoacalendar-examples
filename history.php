@@ -15,6 +15,7 @@ $userRow=mysql_fetch_array($res);
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/navheader.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/table.css"/>
 </head>
 <header id="header">
 				<h1><a href="index.html">Fantastic Training</a></h1>
@@ -32,7 +33,6 @@ $userRow=mysql_fetch_array($res);
 					<li><a href="viewProfile.php">My Profile</a></li>
 					<li><a href="uoa.php">Manage your calendar</a></li>
 					<li><a href="home.php">Check Workout Summary</a></li>
-					
 				</ul>
 </nav>
 			
@@ -43,42 +43,21 @@ $userRow=mysql_fetch_array($res);
 		
 		<br>
 		
-		<div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value"/>Summary</label>
-		<br>
-		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value" checked/>History</label>
-		</div>
-		<br>
-		<br>
+		<table class="gridtable">
+		<tr>
+			<td>
+				<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value"/>Summary</label>
+			</td>
+			<td>
+				<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value" checked/>History</label>
+			</td>
+		</tr>
+		</table>
 		
-		<!-- CSS goes in the document HEAD or added to your external stylesheet -->
-		
-		<style type="text/css">
-		table.gridtable {
-			font-family: verdana,arial,sans-serif;
-			font-size:11px;
-			color:#333333;
-			border-width: 1px;
-			border-color: #666666;
-			border-collapse: collapse;
-		}
-		table.gridtable th {
-			border-width: 1px;
-			padding: 8px;
-			border-style: solid;
-			border-color: #666666;
-			background-color: #dedede;
-		}
-		table.gridtable td {
-			border-width: 1px;
-			padding: 8px;
-			border-style: solid;
-			border-color: #666666;
-			background-color: #ffffff;
-		}
-	</style>
+		<br>
 	
 	<!-- Table goes in the document BODY -->
-	<table class="gridtable"">
+	<table class="gridtable">
 		<tr>
 			<th>Date</th>
 			<th>Workout Type</th>

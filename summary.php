@@ -14,7 +14,8 @@ $userRow=mysql_fetch_array($res);
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/navheader.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/navheader.css"/>	
+	<link rel="stylesheet" type="text/css" href="assets/css/table.css"/>
 </head>
 <header id="header">
 				<h1><a href="index.html">Fantastic Training</a></h1>
@@ -40,20 +41,25 @@ $userRow=mysql_fetch_array($res);
 <body>
 <form action="home.php" class = "register">
    <h1 align = 'center'><b>Workout Summary</b></h1>
+   
+   <form>
 		
 		<br>
 
-		<div>
-		<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value" checked/>Summary</label>
-		<br>
-		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value"/>History</label>
-		</div>
+		<table class="gridtable">
+		<tr>
+			<td>
+				<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value" checked/>Summary</label>
+			</td>
+			<td>
+				<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value"/>History</label>
+			</td>
+		</tr>
+		</table>
 		
 		<br>
 		
-		<img align="middle" src = "graph.php"/>
-	
-		
+		<img src = "graph.php" align="middle"/>
        
     <div><button class="button" name = "proceed">OK &raquo;</button></div>
 	</body>
