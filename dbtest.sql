@@ -45,6 +45,14 @@ ALTER TABLE `users`  ADD `Name` VARCHAR(30) NOT NULL  AFTER `password`,
  
  ALTER TABLE `users` CHANGE `Height` `Height` VARCHAR(3) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
  
+ --Creating a table for mapping between user and calendar
+ CREATE TABLE `dbtest`.`userCalendarMappling` ( `user_id` INT(5) NOT NULL , `calendar_id` INT(5) NOT NULL ) ENGINE = InnoDB;
+ ALTER TABLE `userCalendarMappling` ADD PRIMARY KEY(`user_id`);
+ --Dummy data
+ INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('1', '1'), ('2', '2');
+ INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('5', '5'), ('6', '6');
+ INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('7', '7'), ('8', '8');
+ INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('9', '9');
 
 --
 -- Dumping data for table `users`

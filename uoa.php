@@ -7,7 +7,9 @@ if(!isset($_SESSION['user']))
 	header("Location: index.php");
 }
 $res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
+$calendarResult = mysql_query("SELECT calendar_id FROM usercalendarmappling where user_id=".$_SESSION['user']);
 $userRow=mysql_fetch_array($res);
+$calendarRow=mysql_fetch_array($calendarResult);
 ?>
 
 <html>
@@ -37,7 +39,7 @@ $userRow=mysql_fetch_array($res);
 		    };
             uoaCalendar('#calendar', {
                 events: {
-                    uoaCalendarId: '1',
+                    uoaCalendarId: '<?php echo $calendarRow['calendar_id']?>',
                     uoaCalendarApiToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnX2lhdCI6MTQyMjQ5ODk0OSwiZXhwIjoxNDIyNDk5MjQ5LCJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRldmVsb3BlciIsImVtYWlsIjoidGVzdEBhdWNrbGFuZC5hYy5ueiJ9.7jLkEBovT2HvT2noL4xdIhddaY8wpZpEVYEDHnnNm1Y',
                     uoaCalendarHost: 'sitcalprd01.its.auckland.ac.nz',
                     uoaCalendarPort: '345'
