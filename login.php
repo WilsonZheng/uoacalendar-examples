@@ -11,13 +11,11 @@ if(isset($_POST['btn-login']))
 	
 	
 		?>
-        <script>alert('Inside this loop');</script>
         <?php
 	if($row['password']==md5($upass))
 	{	
 		$_SESSION['user'] = $row['user_id'];
 		?>
-        <script>alert('Inside this loop');</script>
         <?php
 		$count = mysql_query("SELECT count(*) 'count' FROM users WHERE email='$email' AND Height IS NOT NULL");
 		$result = mysql_fetch_array($count);
@@ -29,7 +27,7 @@ if(isset($_POST['btn-login']))
 		else
 		{
 		?>
-        <script>alert('Inside this loop');</script>
+
         <?php
 		header("Location: home.php");
 		}
