@@ -70,7 +70,7 @@ $calendarRow=mysql_fetch_array($calendarResult);
 			
 			
 <div id="loading">loading...</div>
-
+<br>
 <table style="width:100%">
     <tr>
         <td style="width: 15%"></td>
