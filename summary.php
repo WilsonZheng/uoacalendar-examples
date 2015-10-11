@@ -43,13 +43,12 @@ $userRow=mysql_fetch_array($res);
 
 		<br>
 
-		<div>
-		<label><input type="radio" name="summaryPage" value="summary" checked/>Summary</label>
-		<br>
-		<label><input type="radio" name="summaryPage" value="history"/>History</label>
-		</div>
-		
-		<br>
+        <div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="window.open(this.value) checked"/>Summary</label>
+        <br>
+        <label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="window.open(this.value)"/>History</label>
+        </div>
+        <br>
+        <br>
 		
 		<img align="middle" src = "graph.php"/>
 	
