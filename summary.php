@@ -59,7 +59,7 @@ $userRow=mysql_fetch_array($res);
 		
 		<br>
 		
-		<img src = "graph.php" align="middle"/>
+		<img src = "graph.php" style="display: block; margin-left: auto; margin-right: auto;"/>
        
     <div><button class="button" name = "proceed">OK &raquo;</button></div>
 	</body>
