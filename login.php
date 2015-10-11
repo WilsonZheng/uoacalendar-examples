@@ -35,9 +35,7 @@ if(isset($_POST['btn-login']))
 	}
 	else
 	{
-		?>
-        <script>alert('Inside this loop');</script>
-        <?php
+		
 		?>
         <script>alert('Email or password not correct! Please try again.');</script>
         <?php
