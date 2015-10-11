@@ -43,9 +43,9 @@ $userRow=mysql_fetch_array($res);
 		
 		<br>
 		
-		<div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="window.open(this.value)"/>Summary</label>
+		<div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value"/>Summary</label>
 		<br>
-		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="window.open(this.value)" checked/>History</label>
+		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value" checked/>History</label>
 		</div>
 		<br>
 		<br>

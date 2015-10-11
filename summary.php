@@ -40,15 +40,16 @@ $userRow=mysql_fetch_array($res);
 <body>
 <form action="home.php" class = "register">
    <h1 align = 'center'><b>Workout Summary</b></h1>
-
+		
 		<br>
 
-        <div><label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="window.open(this.value) checked"/>Summary</label>
-        <br>
-        <label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="window.open(this.value)"/>History</label>
-        </div>
-        <br>
-        <br>
+		<div>
+		<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value" checked/>Summary</label>
+		<br>
+		<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value"/>History</label>
+		</div>
+		
+		<br>
 		
 		<img align="middle" src = "graph.php"/>
 	
