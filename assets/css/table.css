@@ -23,3 +23,12 @@ table.gridtable td {
     border-color: #666666;
     background-color: #ffffff;
 }
+
+table.menutable {
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

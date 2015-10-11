@@ -46,7 +46,7 @@ $userRow=mysql_fetch_array($res);
 		
 		<br>
 
-		<table class="gridtable">
+		<table class="menutable">
 		<tr>
 			<td>
 				<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value" checked/>Summary</label>
