@@ -41,11 +41,20 @@ $userRow=mysql_fetch_array($res);
 <form action="home.php" class = "register">
    <h1 align = 'center'><b>Workout Summary</b></h1>
 
-		<img src = "graph.php"/>
+		<br>
+
+		<div>
+		<label><input type="radio" name="summaryPage" value="summary" checked/>Summary</label>
+		<br>
+		<label><input type="radio" name="summaryPage" value="history"/>History</label>
+		</div>
+		
+		<br>
+		
+		<img align="middle" src = "graph.php"/>
 	
 		
-        
-   
+       
     <div><button class="button" name = "proceed">OK &raquo;</button></div>
 	</body>
 
