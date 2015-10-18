@@ -46,10 +46,10 @@ $userRow=mysql_fetch_array($res);
 		<table class="menutable">
 		<tr>
 			<td>
-				<label><input type="radio" name="summaryPage" value="http://localhost/summary.php" onclick="document.location=this.value"/>Summary</label>
+				<label><input type="radio" name="summaryPage" value="http://localhost:8080/summary.php" onclick="document.location=this.value"/>Summary</label>
 			</td>
 			<td>
-				<label><input type="radio" name="summaryPage" value="http://localhost/history.php" onclick="document.location=this.value" checked/>History</label>
+				<label><input type="radio" name="summaryPage" value="http://localhost:8080/history.php" onclick="document.location=this.value" checked/>History</label>
 			</td>
 		</tr>
 		</table>

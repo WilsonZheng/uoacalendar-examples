@@ -36,7 +36,7 @@ $userRow=mysql_fetch_array($res);
 			<nav id="nav">
 				<ul class="links">
 					<li><a href="logout.php?logout">Sign Out</a></li>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="home.php">Home</a></li>
 					<li><a href="viewProfile.php">My Profile</a></li>
 					<li><a href="uoa.php">Manage your calendar</a></li>
 					<li><a href="summary.php">Check Workout Summary</a></li>
@@ -98,6 +98,19 @@ $userRow=mysql_fetch_array($res);
 							<ul class="actions">
 								<li>
 									<a href="healthyplan.php" class="button special">More</a>
+								</li>
+							</ul>
+						</div>
+						</article>
+						
+						<article class="feature right">
+						<span class="image"><img src="images/kilimanjaro.jpg" alt="" /></span>
+						<div class="content">
+							<h2>Mount Kilimanjaro</h2>
+							<p>Here's some information about the Mount Kilimanjaro for the brave hearted !!</p>
+							<ul class="actions">
+								<li>
+									<a href="kilimanjaro.php" class="button special">More</a>
 								</li>
 							</ul>
 						</div>
