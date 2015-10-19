@@ -66,8 +66,18 @@ ALTER TABLE `events` ADD `end_date` DATE NOT NULL AFTER `start_date`, ADD `dista
  ADD `todo_done` BOOLEAN NOT NULL AFTER `reminder`;ALTER TABLE `events` ADD `end_date` DATE NOT NULL AFTER `start_date`,
  ADD `distance` FLOAT NOT NULL AFTER `end_date`, ADD `duration` FLOAT NOT NULL AFTER `distance`,
  ADD `reminder` VARCHAR(30) NOT NULL AFTER `duration`, ADD `todo_done` BOOLEAN NOT NULL AFTER `reminder`;
--- Dumping data for table `users`
---
+-- Dumping data for table `events``
+INSERT INTO `dbtest`.`events` (`calendar_id`, `event_id`, `exercise_type`, `start_date`, `end_date`, `distance`, `duration`, `reminder`, `todo_done`) 
+VALUES ('1', '1', 'Cycling', '2015-10-01', '2015-10-01', '12', '2.5', '12', '1'), 
+('1', '2', 'Running', '2015-10-03', '2015-10-03', '', '.5', '', '1');
+
+INSERT INTO `dbtest`.`events` (`calendar_id`, `event_id`, `exercise_type`, `start_date`, `end_date`, `distance`, `duration`, `reminder`, `todo_done`)
+ VALUES ('1', '3', 'Climbing', '2015-10-05', '2015-10-05', '', '0.5', '', '1'), 
+ ('1', '4', 'Wallking', '2015-10-07', '2015-10-07', '', '1', '', '1');
+ 
+ INSERT INTO `dbtest`.`events` (`calendar_id`, `event_id`, `exercise_type`, `start_date`, `end_date`, `distance`, `duration`, `reminder`, `todo_done`)
+ VALUES ('1', '5', 'Swimming', '2015-10-09', '2015-10-09', '', '2.5', '', '2');
+ 
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`) VALUES
 (1, 'pradeep', 'pradeep@gmail.com', '202cb962ac59075b964b07152d234b70');
