@@ -1,0 +1,376 @@
+commit 9fa698655a00ff28f142c790c62efe2d006f77ee
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Mon Oct 19 18:31:55 2015 +1300
+
+    adjusted graph
+
+commit 3f43797cdb512453a918953b20b2a4ce480f3cb7
+Merge: 3682097 90454dd
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Mon Oct 19 18:00:39 2015 +1300
+
+    Merge branch 'master' of https://github.com/nsamira/uoacalendar-examples
+
+commit 36820975afd58a7ddd808d17dcb849bc5ef9f73a
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Mon Oct 19 18:00:19 2015 +1300
+
+    updated dbtest.sql
+
+commit 90454dd783d571bd899e0019dd3462bf7de0d5ad
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Mon Oct 19 16:21:05 2015 +1300
+
+    upload readme file
+
+commit 1d7104c551a422b53387931433e5664b93abfad8
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Mon Oct 19 16:13:45 2015 +1300
+
+    new table events
+
+commit f4db1dbb95d64c4e3628a9c625e0693e34bf2042
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 18 22:58:04 2015 +1300
+
+    kilimanjaro page
+
+commit 7122f9953d19f8e027bce3c9f69c9c152e38a258
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 11:38:42 2015 +1300
+
+    images for motivation
+
+commit 667ab6d86a8d08ce47910f3b37423cfeed52157a
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Mon Oct 12 10:14:16 2015 +1300
+
+    Remove debugging alert
+
+commit 91b4e84e0d95c24d22b0708075299910a455b089
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 01:56:08 2015 +1300
+
+    ensure links open correct page
+
+commit eb9c3e23b8719029b6a2451986d2aa7efbc78464
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 01:30:53 2015 +1300
+
+    Align workout summary graph to center
+
+commit cfdc2690b235ac732b7d4a03d01c4496a56039f9
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 01:20:12 2015 +1300
+
+    removed border
+
+commit aa5732a30b473a5fb8f31ecc55dc83537c05cddd
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 01:13:33 2015 +1300
+
+    aligned the radio button to the center of the page
+
+commit 51952fec930df0c2b17a9e230bb128921fcc949c
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Mon Oct 12 01:12:31 2015 +1300
+
+    new css file for table
+
+commit 88adc0f66665fc5de74d0065a8e8c09a386dd778
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 21:27:58 2015 +1300
+
+    Fix radio button opening new page
+
+commit 0695d55b960680255eb2a2ca8808458e8c1c70b5
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 21:11:06 2015 +1300
+
+    Fix link on radio button
+
+commit b4e55779fd1d1f7118e15d86ace8b86218a6cfa4
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 21:09:34 2015 +1300
+
+    Populate workout history into table
+
+commit 22f5a01aa8e325c01fe345d5e4e3ca413adc809a
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 19:54:39 2015 +1300
+
+    Add radio button
+
+commit 5472e5dfde613aca1ad3d0ff7f9d9c4b1bf5f711
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 19:54:23 2015 +1300
+
+    Create a history page
+
+commit 9ee50f14038cee9de09e0000869b8c81c915828e
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 18:33:33 2015 +1300
+
+    Removed unwanted comments
+
+commit 7136e10e8a7e3d9d89df5b22d2119ba3343d0b53
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 18:10:16 2015 +1300
+
+    summary page
+
+commit c836cecd4c8cb8c61338325381987e2e5bddb0b0
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 17:37:59 2015 +1300
+
+    Summary page
+
+commit 42624542f1704be4795d4ffc9123436216576c4d
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 16:03:32 2015 +1300
+
+    included the code for automatic entry to useridcalendar mapping table
+
+commit f1f54e39f7b511521f3f17fd484e34c49342b4f2
+Merge: a319284 1ee414d
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 15:49:56 2015 +1300
+
+    Merge branch 'master' of https://github.com/nsamira/uoacalendar-examples
+
+commit a319284b240881c21af15104957c6f33a53191e2
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 15:49:42 2015 +1300
+
+    Adding a new table and modified uoa.php to display a different calendar id for different user
+
+commit 1ee414dc7c4ce3bfe02916e12bab67bca02c08ee
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 15:10:13 2015 +1300
+
+    Update .gitignore
+
+commit 851e39d5aaedfc359b75f43465f2a39ef63ef63d
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sun Oct 11 14:15:03 2015 +1300
+
+    Update .gitignore
+
+commit 35077ba3a0896f75691489d4798ddcce9fe28181
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sun Oct 11 03:00:49 2015 +1300
+
+    Profile Completed
+
+commit 29ee8c71f15ce79d13405744b16e9a7ce93ab68c
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sat Oct 10 21:53:09 2015 +1300
+
+    Removed the image for h1 in default.css
+
+commit 554929faf1a8789f244ca156266a45645002fedb
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Sat Oct 10 21:44:52 2015 +1300
+
+    Editing profile and viewing profile
+
+commit 672204904d2a8bc8b52fcbdc52e00747ea65b9d5
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 17:15:06 2015 +1300
+
+    add login.css to assets folder
+
+commit fde88be9a802c66ed29b1f6596b7e066427f7536
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 17:13:49 2015 +1300
+
+    delete style.css
+
+commit ba5b9f667b4f2fdbcf9fdd186269454e650868ce
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 16:57:21 2015 +1300
+
+    dbtest.sql updated
+
+commit 2394a93730439e86b00c3ac4c7e448672b25b609
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sat Oct 10 16:31:55 2015 +1300
+
+    Update .gitignore
+
+commit 00b849539e36fa170b6c1e9dc05767f177caf252
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sat Oct 10 16:30:07 2015 +1300
+
+    Update .gitignore
+
+commit ae6882d2c9817566e6e5fadae09e978eb7a3eefc
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 16:21:49 2015 +1300
+
+    Modified uoa calendar user interface, add calendar.css and the calendar page will now be named as uoa.php
+
+commit 94446587f9fde8d28d3a1265ae8ecca5f2e57a67
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 15:46:16 2015 +1300
+
+    delete useless file, this css file not in use anymore
+
+commit 74544d6cf3ccbb55488e34acee0b4daecad2ff8b
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 15:09:41 2015 +1300
+
+    change the login function. After login, it goes to home.php instead of profile page
+
+commit 6f54b3df50cfdac18510da3b21c847e395004e92
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sat Oct 10 13:53:13 2015 +1300
+
+    Re-arrange calendar to the center of page
+
+commit 20deadf491dd097397a31022cfe4e4eb02a9bff9
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Sat Oct 10 03:14:50 2015 +1300
+
+    update 3 more static pages which link to home.php,also update home.php
+
+commit 8d98cbd39ce60860da1e2fdd47b07125fc53135d
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Sat Oct 10 02:46:17 2015 +1300
+
+    Update .gitignore
+
+commit 9937b0eaad88adc20e843a5fb96f396193bc599a
+Merge: 79c15bd 5155cae
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Fri Oct 9 23:25:54 2015 +1300
+
+    Merge branch 'master' of https://github.com/nsamira/uoacalendar-examples
+
+commit 79c15bd5bc72e7807e7869006a316e48ae39d6ae
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Fri Oct 9 23:25:41 2015 +1300
+
+    changes for db in profile.php page
+
+commit 5155cae2bf574e699b7d1dc15c2aa216c828e1ff
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Fri Oct 9 21:43:50 2015 +1300
+
+    Modify home.php UI and add images related to this page
+
+commit afeca0eb133a1678d49e0a48b8abb7fddf930ef4
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Fri Oct 9 17:07:00 2015 +1300
+
+    New changes
+
+commit bf98b7fb35683f684ba2e63c0bd458b52cd8f115
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Fri Oct 9 14:31:21 2015 +1300
+
+    add new login/register page with php code set up, need to set up local database to get it working, the database setup is just copy and paste the code of the sql file to phpmyadmin page of local server
+
+commit d7bb032343e3e601e3337838663d053c82ab4393
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Fri Oct 9 14:27:32 2015 +1300
+
+    delete old version login/register page
+
+commit 29cdf64651e2ac9458c87af4007285b0f0472638
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Fri Oct 9 01:52:54 2015 +1300
+
+    edited profile page. calculation of BMI
+
+commit ca37af148308ec1b1b0ef11473f19ae8282bde14
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Thu Oct 8 19:48:20 2015 +1300
+
+    Edited the css file for profile page
+
+commit d36f4644671b00a29935e4978e55e1fd243c0bb8
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Thu Oct 8 19:08:11 2015 +1300
+
+    New profile page
+
+commit 32ce29f8f43e793af63802498faf5c84f576bd00
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 8 14:30:01 2015 +1300
+
+    new version index page and login page, login function done with js
+
+commit df873314f086ace319d4e563c8f10b45c079283a
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 8 14:20:22 2015 +1300
+
+    delete old version index page
+
+commit 2d8b2afab6cc17b1da548d466ee09f33eaf0575e
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 1 17:01:02 2015 +1300
+
+    upload index file
+
+commit 2821ac216bcbe91e0d76d3424ea73ab88bccda47
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 1 16:59:39 2015 +1300
+
+    delete bug files
+
+commit a44c60760eb0c3434e02c9ff28808df8c0fe0085
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 1 16:53:45 2015 +1300
+
+    new version of home page
+
+commit 3dc88a6b17867b87fb2e772243224be6adf70ea5
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 1 16:52:17 2015 +1300
+
+    delete old version of home page
+
+commit 35ef109df3ff3caf63d6cb0fbe2fdb8fa081ab18
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Thu Oct 1 16:31:21 2015 +1300
+
+    Reflect changes made using AddEvent on existing calendar
+
+commit b5693df64db95159aad0106f988b7e34d5245e99
+Author: Janani Kannan <jkan437@aucklanduni.ac.nz>
+Date:   Thu Oct 1 15:11:22 2015 +1300
+
+    Made some changes to the alignment and background in the HTML and CSS file
+
+commit 37ca358b9c652e7dfd3f70edb2a90bcf10e7d377
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Thu Oct 1 14:58:36 2015 +1300
+
+    Index pic for home page
+
+commit 414425e68b78654dc45fabccc98d06915d75f17f
+Author: WilsonZheng <zhwzhw29@gmail.com>
+Date:   Thu Oct 1 14:46:55 2015 +1300
+
+    Home_page
+    
+    add home page
+
+commit 6754e6403c766bb91d461a3cc9528cf43c36b7d3
+Author: nsamira <enthusiast.lovers@gmail.com>
+Date:   Thu Oct 1 13:48:27 2015 +1300
+
+    Add codes to js functions
+
+commit c7cecf572fd7efab99f19a4fac04908e93e1d9ea
+Author: Jamie Diprose <jamie.diprose@gmail.com>
+Date:   Sun Aug 23 23:06:32 2015 +1200
+
+    Tutorial code
+
+commit c9f9de0ae61d5ea041f78df0597ff5a69c4c207c
+Author: Jamie Diprose <jamie.diprose@gmail.com>
+Date:   Sun Aug 23 15:49:05 2015 +1200
+
+    Initial commit
