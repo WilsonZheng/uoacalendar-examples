@@ -67,8 +67,14 @@ $userRow=mysql_fetch_array($res);
 		<tr>
 			<td>01/10/2015</td>
 			<td>Cycling</td>
-			<td>1 hour</td>
+			<td>0.5 hour</td>
 			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
+		</tr>
+		<tr>
+			<td>02/10/2015</td>
+			<td>No activity</td>
+			<td>0 hour</td>
+			<td><img src="Loser.jpg" alt="Loser face" height="25" width="25"></td>
 		</tr>
 		<tr>
 			<td>03/10/2015</td>
@@ -77,21 +83,33 @@ $userRow=mysql_fetch_array($res);
 			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
 		</tr>
 		<tr>
+			<td>04/10/2015</td>
+			<td>No activity</td>
+			<td>0 hour</td>
+			<td><img src="Loser.jpg" alt="Loser face" height="25" width="25"></td>
+		</tr>
+		<tr>
 			<td>05/10/2015</td>
 			<td>Climbing</td>
-			<td>1.5 hour</td>
-			<td><img src="Loser.jpg" alt="Loser face" height="25" width="30"></td>
+			<td>0.5 hour</td>
+			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="30"></td>
+		</tr>
+		<tr>
+			<td>06/10/2015</td>
+			<td>No activity</td>
+			<td>0 hour</td>
+			<td><img src="Loser.jpg" alt="Loser face" height="25" width="25"></td>
 		</tr>
 		<tr>
 			<td>07/10/2015</td>
 			<td>Walking</td>
-			<td>0.5 hour</td>
+			<td>1 hour</td>
 			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
 		</tr>
 		<tr>
 			<td>09/10/2015</td>
 			<td>Swimming</td>
-			<td>1 hour</td>
+			<td>2.5 hour</td>
 			<td><img src="Smiley.jpg" alt="Smiley face" height="25" width="25"></td>
 		</tr>
 	</table>

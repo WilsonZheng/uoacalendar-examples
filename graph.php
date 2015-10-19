@@ -1,8 +1,8 @@
 <?php
 include('phpgraphlib.php');
 $graph = new PHPGraphLib(350,280);
-$data = array("Day1"=>4, "Day2"=>2, "Day3"=>5, "Day4"=>7,
-"Day5"=>1, "Day6"=>5, "Day7"=>2);
+$data = array("Day1"=>0.5, "Day2"=>0, "Day3"=>0.5, "Day4"=>0,
+"Day5"=>0.5, "Day6"=>0, "Day7"=>1 ,"Day8"=>0, "Day9"=>2.5);
 //$graph->setBackgroundColor("black");
 $graph->addData($data);
 $graph->setBarColor('255,255,204');
