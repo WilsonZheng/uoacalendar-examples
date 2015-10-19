@@ -45,6 +45,7 @@ ALTER TABLE `users`  ADD `Name` VARCHAR(30) NOT NULL  AFTER `password`,
  
  ALTER TABLE `users` CHANGE `Height` `Height` VARCHAR(3) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
  
+ 
  --Creating a table for mapping between user and calendar
  CREATE TABLE `dbtest`.`userCalendarMappling` ( `user_id` INT(5) NOT NULL , `calendar_id` INT(5) NOT NULL ) ENGINE = InnoDB;
  ALTER TABLE `userCalendarMappling` ADD PRIMARY KEY(`user_id`);
@@ -54,7 +55,17 @@ ALTER TABLE `users`  ADD `Name` VARCHAR(30) NOT NULL  AFTER `password`,
  INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('7', '7'), ('8', '8');
  INSERT INTO `dbtest`.`usercalendarmappling` (`user_id`, `calendar_id`) VALUES ('9', '9');
 
---
+--Creating an event table
+CREATE TABLE `dbtest`.`events` ( `calendarId` INT(3) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `events` CHANGE `calendarId` `calendar_id` INT(5) NOT NULL;
+ALTER TABLE `events` ADD `event_id` INT(5) NOT NULL AFTER `calendar_id`;
+ALTER TABLE `events` ADD `exercise_type` VARCHAR(15) NOT NULL AFTER `event_id`;
+ALTER TABLE `events` ADD `start_date` DATE NOT NULL AFTER `exercise_type`;
+ALTER TABLE `events` ADD `end_date` DATE NOT NULL AFTER `start_date`, ADD `distance` FLOAT NOT NULL AFTER `end_date`,
+ ADD `duration` FLOAT NOT NULL AFTER `distance`, ADD `reminder` VARCHAR(30) NOT NULL AFTER `duration`,
+ ADD `todo_done` BOOLEAN NOT NULL AFTER `reminder`;ALTER TABLE `events` ADD `end_date` DATE NOT NULL AFTER `start_date`,
+ ADD `distance` FLOAT NOT NULL AFTER `end_date`, ADD `duration` FLOAT NOT NULL AFTER `distance`,
+ ADD `reminder` VARCHAR(30) NOT NULL AFTER `duration`, ADD `todo_done` BOOLEAN NOT NULL AFTER `reminder`;
 -- Dumping data for table `users`
 --
 
